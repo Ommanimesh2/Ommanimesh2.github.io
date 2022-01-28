@@ -9,8 +9,8 @@
 .rightfixed {
   position: fixed;
   top: 24vh;
+  right: -21.5vw;
   z-index: 100;
-  right: -350px;
   transform: rotate(270deg);
   transition: 1s;
 }
@@ -410,6 +410,101 @@ body {
 .newline {
   position: relative;
 }
-@media   {
+@media screen and (max-width:1000px) {
+  .grid {
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+ .rightfixed{
+   display: none;
+ }
+ .center-main{
+   display: flex;
+   flex-direction: column-reverse;
+   align-items: center;
+ }
+ .textbig{
+   text-align: center;
+ }
+ .mainbody{
+ display: flex;
+justify-content: center;
+}
+.main-title{
+  margin-left: 0;
+}
+.main-title span{
+  font-size: 20px;
+}
+.white {
+  background-color: white;
+  border: 2px solid white;
+  width: 250px;
+  position: absolute;
+}
+.green {
+  z-index: 10;
+  border-radius: 10px;
+  border: 2px solid green;
+  background-color: green;
+  width: 35px;
+  position: absolute;
+  left: 260px;
+}
+.textbig{
+  margin-left: 0;
+}
+.textbig h1{
+  font-size: 50px;
+}
+.icons{
+  display: none;
+}
+.sppimage img{
+  height: 100px;
+  width: 100px;
+}
+
+.right1{
+  margin-left: 0;
+  height: 300px;
+  width: 300px;
+}
+
+.registerfor{
+ display: flex;
+width: 100%;
+
+}
+.smallgrid{
+margin: 0;
+}
+.perks{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.title-logo{
+  margin: 0;
+  width:100%;
+  display: flex;
+  justify-content: center;
+}
+.title{
+  display: none;
+}
+.items{
+  display: flex;
+  flex-direction: column;
+}
+.navbar{
   
+}
+#item5,#register{
+display: none;
+}
 }
