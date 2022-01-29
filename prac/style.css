@@ -543,10 +543,12 @@ display: none;
 }
 
 .login{
-  display: none;
+  opacity: 0;
 }
 .dropdown{
   display: none;
 }
-
+.bt,.bt1{
+  display: none;
+}
 }

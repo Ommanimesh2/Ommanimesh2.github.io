@@ -12,6 +12,8 @@ let dpdwn=document.getElementById("dropdown")
 let newitems=document.getElementById("newitems")
 let navitems=document.querySelectorAll(".navitems")
 let navtoggle=document.querySelector(".navt");
+let bt=document.querySelector(".bt");
+let bt1=document.querySelector(".bt1");
 
 
 navtoggle.addEventListener("click",()=>{
@@ -26,6 +28,8 @@ navtoggle.addEventListener("click",()=>{
             item.style.display="block"
             navtoggle.classList.remove("fa-align-justify")
             navtoggle.classList.add("fa-times")
+            login.innerText="login"
+
         }
     })
 })
