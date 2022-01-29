@@ -369,9 +369,10 @@ body {
   margin-left: 10vw;
   border: 1px solid rgb(29, 185, 152);
   box-shadow: -3px 0 white,-6px 0 rgb(29, 185, 152);
-  height: 30px;
-  width: 30px;
+  height: 25px;
+  width: fit-content;
   color: black;
+  padding: 6px;
   font-size: 30px;
   display: flex;
   justify-content: center;
