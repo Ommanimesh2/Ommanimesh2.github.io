@@ -32,7 +32,7 @@ navtoggle.addEventListener("click",()=>{
             navtoggle.classList.remove("fa-align-justify")
             navtoggle.classList.add("fa-times")
             item5.innerHTML="Register"
-item6.innerHTML="Login"
+            item6.innerHTML="Login"
            
 
         }
