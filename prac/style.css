@@ -509,10 +509,6 @@ height: 50px;
   flex-direction: column;
 }
 
-#item5,#register{
-display: none;
-}
-
 .registerfor button{
   margin-left: 30vw;
   margin-right: 30vw;
@@ -538,7 +534,7 @@ display: none;
 .items{
   background-color: black;
   width: 100vw;
-  
+
 }
 .navitems{
   border-bottom: 2px solid white;
@@ -556,13 +552,9 @@ display: none;
 }
 
 
-.login{
-  opacity: 0;
-}
+
 .dropdown{
   display: none;
 }
-.bt,.bt1{
-  display: none;
-}
+
 }

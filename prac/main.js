@@ -31,21 +31,11 @@ navtoggle.addEventListener("click",()=>{
             item.style.display="block"      
             navtoggle.classList.remove("fa-align-justify")
             navtoggle.classList.add("fa-times")
-            item5.innerHTML="Register"
-            item6.innerHTML="Login"
-           
 
         }
     })
 })
-if(item.style.display="block"){
-    navtoggle.classList.remove("fa-align-justify")
-            navtoggle.classList.add("fa-times")
-}
-else{
-    navtoggle.classList.add("fa-align-justify")
-    navtoggle.classList.remove("fa-times")
-}
+
 search.addEventListener("click",()=>{
     if(textarea.style.display!="block"){
         search.classList.remove("fa-search")
