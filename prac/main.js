@@ -38,7 +38,14 @@ navtoggle.addEventListener("click",()=>{
         }
     })
 })
-
+if(item.style.display="block"){
+    navtoggle.classList.remove("fa-align-justify")
+            navtoggle.classList.add("fa-times")
+}
+else{
+    navtoggle.classList.add("fa-align-justify")
+    navtoggle.classList.remove("fa-times")
+}
 search.addEventListener("click",()=>{
     if(textarea.style.display!="block"){
         search.classList.remove("fa-search")
