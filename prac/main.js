@@ -11,7 +11,7 @@ let dpdwn2=document.getElementById("dropdown-item2")
 let dpdwn=document.getElementById("dropdown")
 let newitems=document.getElementById("newitems")
 let navitems=document.querySelectorAll(".navitems")
-let navtoggle=document.querySelector(".navt")
+let navtoggle=document.querySelector(".navt");
 
 
 navtoggle.addEventListener("click",()=>{
