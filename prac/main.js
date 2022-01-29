@@ -10,8 +10,25 @@ let dpdwn1=document.getElementById("dropdown-item1")
 let dpdwn2=document.getElementById("dropdown-item2")
 let dpdwn=document.getElementById("dropdown")
 let newitems=document.getElementById("newitems")
+let navitems=document.querySelectorAll(".navitems")
+let navtoggle=document.querySelector(".navt")
 
 
+navtoggle.addEventListener("click",()=>{
+    console.log("here")
+    navitems.forEach((item)=>{
+        if(item.style.display!="none"){
+            item.style.display="none"
+            navtoggle.classList.add("fa-align-justify")
+            navtoggle.classList.remove("fa-times")
+        }
+        else{
+            item.style.display="block"
+            navtoggle.classList.remove("fa-align-justify")
+            navtoggle.classList.add("fa-times")
+        }
+    })
+})
 search.addEventListener("click",()=>{
     if(textarea.style.display!="block"){
         search.classList.remove("fa-search")

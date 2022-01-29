@@ -5,11 +5,14 @@
   font-family: "Be Vietnam Pro", sans-serif;
   font-family: "Lato", sans-serif;
 }
+.navtoggle{
+  display: none;
+}
 
 .rightfixed {
   position: fixed;
   top: 24vh;
-  right: -21.5vw;
+  right: -299px;
   z-index: 100;
   transform: rotate(270deg);
   transition: 1s;
@@ -28,6 +31,11 @@
   background-color: white;
   transition: 1s;
   transition-delay: 1s;
+}
+.grid span{
+  position: absolute;
+  bottom: 0;
+  
 }
 
 .txt:hover {
@@ -88,9 +96,9 @@ body {
   background-color: black;
   border: 2px solid green;
   font-size: 15px;
-  height: 5vh;
+  height: 30px;
   font-weight: bolder;
-  width: 6vw;
+  width: 80px;
   position: relative;
   top: -4px;
 }
@@ -99,11 +107,11 @@ body {
   border: 2px solid rgb(36, 145, 36);
 }
 .register {
-  font-size: 1vw;
+  font-size: 13px;
   background-color: rgb(54, 221, 193);
   color: black;
-  height: 5vh;
-  width: 7vw;
+  height: 30px;
+  width:80px;
   position: relative;
   top: -4px;
 }
@@ -234,6 +242,7 @@ body {
   left: 29vw;
 }
 .grid {
+  position: relative;
   padding-bottom: 140px;
   margin-top: 10vh;
   margin-left: 10vw;
@@ -359,39 +368,13 @@ body {
   margin: 20px;
   margin-left: 10vw;
   border: 1px solid rgb(29, 185, 152);
+  box-shadow: -3px 0 white,-6px 0 rgb(29, 185, 152);
   height: 30px;
   width: 30px;
   color: black;
   font-size: 30px;
   display: flex;
   justify-content: center;
-}
-.green41 {
-  position: absolute;
-  background-color: rgb(29, 185, 152);
-  border: 2px solid rgb(29, 185, 152);
-  transform: rotate(90deg);
-  top: 3.5vh;
-  left: 8.3vw;
-  width: 30px;
-}
-.green42 {
-  position: absolute;
-  background-color: rgb(29, 185, 152);
-  border: 2px solid rgb(29, 185, 152);
-  transform: rotate(90deg);
-  top: 3.5vh;
-  left: 8.3vw;
-  width: 30px;
-}
-.green43 {
-  position: absolute;
-  background-color: rgb(29, 185, 152);
-  border: 2px solid rgb(29, 185, 152);
-  transform: rotate(90deg);
-  left: 8.2vw;
-  top: 3.5vh;
-  width: 30px;
 }
 
 .sppimage img {
@@ -407,25 +390,24 @@ body {
   padding-top: 25px;
   font-size: 20px;
 }
-.newline {
-  position: relative;
-}
+
 @media screen and (max-width:1000px) {
   .grid {
     margin: 0;
+    margin-top: 70px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
   }
- .rightfixed{
-   display: none;
- }
+ 
  .center-main{
+   width: 100%;
    display: flex;
    flex-direction: column-reverse;
    align-items: center;
  }
+
  .textbig{
    text-align: center;
  }
@@ -467,11 +449,15 @@ justify-content: center;
   height: 100px;
   width: 100px;
 }
-
+.right{
+  margin: 0;
+  margin-top: 50px;
+}
 .right1{
-  margin-left: 0;
-  height: 300px;
-  width: 300px;
+  
+  margin: 0;
+  width: 350px;
+  height: 359px;
 }
 
 .registerfor{
@@ -481,30 +467,85 @@ width: 100%;
 }
 .smallgrid{
 margin: 0;
+display: flex;
+flex-direction: column-reverse;
 }
 .perks{
+  margin: 0;
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
 }
+
 .title-logo{
   margin: 0;
-  width:100%;
+height: 50px;
+  width:100vw;
   display: flex;
   justify-content: center;
+  align-items: center;
+}
+.navbar{
+  height: 70px;
 }
 .title{
   display: none;
 }
 .items{
+  position: absolute;
   display: flex;
   flex-direction: column;
 }
-.navbar{
-  
-}
+
 #item5,#register{
 display: none;
 }
+.registerfor button{
+  margin-left: 30vw;
+  margin-right: 30vw;
+}
+
+.perks span{
+  font-size: 20px;
+}
+.white1 {
+  border: 2px solid white;
+  background-color: white;
+  position: absolute;
+  width: 200px;
+  left: -120px;
+}
+.green1 {
+  border: 2px solid green;
+  background-color: green;
+  position: absolute;
+  width: 30px;
+  left: 90px;
+}
+.items{
+  background-color: black;
+  width: 100vw;
+}
+.navitems{
+  border-bottom: 2px solid white;
+  height: 1vh;
+
+}
+
+.navtoggle{
+  display: block;
+  position: fixed;
+  z-index: inherit;
+  right: 50px;
+  top: 24px;
+}
+
+.login{
+  display: none;
+}
+.dropdown{
+  display: none;
+}
+
 }
