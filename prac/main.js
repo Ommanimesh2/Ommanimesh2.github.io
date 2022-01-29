@@ -23,12 +23,17 @@ navtoggle.addEventListener("click",()=>{
             item.style.display="none"
             navtoggle.classList.add("fa-align-justify")
             navtoggle.classList.remove("fa-times")
+            register.style.display="none"
+            login.style.display="none"
         }
         else{
             item.style.display="block"
             navtoggle.classList.remove("fa-align-justify")
             navtoggle.classList.add("fa-times")
-            login.innerText="login"
+            register.style.display="none"
+            login.style.display="none"
+            bt.style.display="none"
+            bt1.style.display="none"
 
         }
     })
@@ -46,6 +51,8 @@ search.addEventListener("click",()=>{
      item4.style.display="none"
      register.style.display="none"
      login.style.display="none"
+     bt.style.display="none"
+     bt1.style.display="none"
     }
     
     else {
