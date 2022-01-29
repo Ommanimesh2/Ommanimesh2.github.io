@@ -541,6 +541,7 @@ display: none;
 .navitems{
   border-bottom: 2px solid white;
   height: 1vh;
+  display: none;
 
 }
 
@@ -551,6 +552,7 @@ display: none;
   right: 50px;
   top: 24px;
 }
+
 
 .login{
   opacity: 0;

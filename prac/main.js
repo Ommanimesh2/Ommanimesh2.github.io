@@ -2,6 +2,8 @@ let item1=document.getElementById("item1")
 let item2=document.getElementById("item2")
 let item3=document.getElementById("item3")
 let item4=document.getElementById("item4")
+let item5=document.getElementById("item5")
+let item6=document.getElementById("item6")
 let register=document.getElementById("register")
 let login=document.getElementById("login")
 let textarea=document.getElementById("textarea")
@@ -12,8 +14,7 @@ let dpdwn=document.getElementById("dropdown")
 let newitems=document.getElementById("newitems")
 let navitems=document.querySelectorAll(".navitems")
 let navtoggle=document.querySelector(".navt");
-let bt=document.querySelector(".bt");
-let bt1=document.querySelector(".bt1");
+
 
 
 navtoggle.addEventListener("click",()=>{
@@ -23,21 +24,28 @@ navtoggle.addEventListener("click",()=>{
             item.style.display="none"
             navtoggle.classList.add("fa-align-justify")
             navtoggle.classList.remove("fa-times")
-            register.style.display="none"
-            login.style.display="none"
+            
+           
         }
         else{
-            item.style.display="block"
+            item.style.display="block"      
             navtoggle.classList.remove("fa-align-justify")
             navtoggle.classList.add("fa-times")
-            register.style.display="none"
-            login.style.display="none"
-            bt.style.display="none"
-            bt1.style.display="none"
+            item5.innerHTML="Register"
+item6.innerHTML="Login"
+           
 
         }
     })
 })
+// if(item.style.display="block"){
+//     navtoggle.classList.remove("fa-align-justify")
+//             navtoggle.classList.add("fa-times")
+// }
+// else{
+//     navtoggle.classList.add("fa-align-justify")
+//     navtoggle.classList.remove("fa-times")
+// }
 search.addEventListener("click",()=>{
     if(textarea.style.display!="block"){
         search.classList.remove("fa-search")
@@ -51,13 +59,11 @@ search.addEventListener("click",()=>{
      item4.style.display="none"
      register.style.display="none"
      login.style.display="none"
-     bt.style.display="none"
-     bt1.style.display="none"
+   
     }
     
     else {
         search.style.left=0;
-
         search.classList.remove("fa-times")
         search.classList.add("fa-search")
         textarea.style.display="none"
